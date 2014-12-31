@@ -10,6 +10,7 @@ namespace FloatMenu
 		{
 			var t = this;
 			InitializeComponent ();
+
 			var l = this.FindByName<ListView> ("list");
 			var items = new[] {
 				new { Title = "Item1" },
@@ -18,9 +19,6 @@ namespace FloatMenu
 				new { Title = "Item4" }
 			};
 			l.ItemsSource = items;
-
-//			var modal = this.FindByName<AbsoluteLayout> ("modal");
-//			var menu = modal.FindByName<StackLayout> ("menu");
 
 			l.ItemSelected += (sender, e) => {
 				// Adjust the height to position it near the item that was clicked (so that it looks "contextual")
@@ -31,6 +29,7 @@ namespace FloatMenu
 			};
 		}
 
+		// This is just one way of getting the correct Y position of what we want
 		private double GetListItemY<T> (ListView list, IList<T> items, T item)
 		{
 			var y = list.Y;
@@ -41,6 +40,7 @@ namespace FloatMenu
 			return y + (height * index);
 		}
 
+		// This is the callback of the GestureRecognizer that we then use to dismiss our popup
 		void OnTappedOnBackground(object sender, EventArgs e){
 			this.modal.IsVisible = false;
 		}

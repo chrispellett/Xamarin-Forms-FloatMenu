@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FloatMenu.SamplePage">
 	<ContentPage.Content>
 		<AbsoluteLayout>
+			<!--- This is just a sample thing for clicking purposes -->
 			<StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
 				<ListView x:Name="list" RowHeight="40">
 					<ListView.ItemTemplate>
@@ -18,7 +19,9 @@
 				<StackLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" BackgroundColor="White" x:Name="menu" Opacity="0.95">
 					<Label Text="Here is a message" />
 					<Label Text="And another message" />
+					<!--- This is where menu buttons, etc. would go -->
 				</StackLayout>
+				<!--- We want to identify taps outside of our above StackLayout so that we can dismiss everything properly -->
 				<AbsoluteLayout.GestureRecognizers>
 					<TapGestureRecognizer Tapped="OnTappedOnBackground" />
 				</AbsoluteLayout.GestureRecognizers>
