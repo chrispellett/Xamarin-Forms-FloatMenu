@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FloatMenu.SamplePage">
+	<ContentPage.Content>
+		<AbsoluteLayout>
+			<StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+				<ListView x:Name="list" RowHeight="40">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<TextCell Text="{Binding Title}" />
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+				<Label Text="End" />
+			</StackLayout>
+			<!--- This is the actual "overall" thing we show/hide. It is a full layout so that we can identify any background clicks -->
+			<AbsoluteLayout IsVisible="false" x:Name="modal" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+				<!--- This is the actual "menu" that we care to show. The LayoutBounds will be updated in code to position this in the right place -->
+				<StackLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" BackgroundColor="White" x:Name="menu" Opacity="0.95">
+					<Label Text="Here is a message" />
+					<Label Text="And another message" />
+				</StackLayout>
+				<AbsoluteLayout.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnTappedOnBackground" />
+				</AbsoluteLayout.GestureRecognizers>
+			</AbsoluteLayout>
+		</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

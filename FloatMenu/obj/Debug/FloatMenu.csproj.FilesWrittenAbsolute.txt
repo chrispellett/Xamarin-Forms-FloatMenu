@@ -1,0 +1,9 @@
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/obj/Debug/FloatMenu.SamplePage.xaml
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/obj/Debug/SamplePage.xaml.g.cs
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/bin/Debug/FloatMenu.dll.mdb
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/bin/Debug/FloatMenu.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/obj/Debug/FloatMenu.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/obj/Debug/FloatMenu.dll.mdb
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/bin/Debug/Xamarin.Forms.Core.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/FloatMenu/FloatMenu/bin/Debug/Xamarin.Forms.Xaml.dll
